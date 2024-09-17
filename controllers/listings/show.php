@@ -1,0 +1,18 @@
+<?php 
+
+$config = require basePath('config/db.php');
+$db = new Database($config);
+
+$id = $_GET['id'] ?? '';
+
+$params = [
+    'id' => $id
+];
+
+inspect($id);
+
+$listing = $db->query('SELECT * FROM listings WHERE id = :id', $params) ->fetch();
+
+inspect($listing);
+
+loadView('listings/show');
