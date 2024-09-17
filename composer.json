@@ -1,0 +1,16 @@
+{
+  "name": "ivvns/job-listings",
+  "descriptions": "Job listing application",
+  "authors": [
+    {
+      "name": "Ivan Somera",
+      "email": "ivansomera@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "Framework/",
+      "Framework\\": "App/"
+    }
+  }
+}
