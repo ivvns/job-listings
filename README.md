@@ -1,6 +1,6 @@
 # About the Project
 
-Job listing website using PHP that resembles the functionality of Laravel.
+Job listing website built using PHP that resembles the functionality of Laravel.
 
 ## Features
 
