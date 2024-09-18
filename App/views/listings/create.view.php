@@ -9,11 +9,9 @@
         <h2 class="text-4xl text-center font-bold mb-4">Create Job Listing</h2>
         <form method="POST" action="/listings">
           <h2 class="text-2xl font-bold mb-6 text-center text-gray-500">Job Info</h2>
-          <?php if(isset($errors)) : ?>
-            <?php foreach($errors as $error) :?>
-              <div class="message bg-red-100 my-3"><?= $error ?></div>
-            <?php endforeach; ?>
-          <?php endif ;?>
+          <?= loadPartial('errors', [
+            'errors' => $errors ?? []
+          ]) ?>
           <div class="mb-4">
             <input
               type="text"

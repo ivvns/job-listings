@@ -33,7 +33,7 @@ class Validation {
     public static function email($value) {
         $value = trim($value);
 
-        return filter_var($value, FILTER_VALIDATE_URL);
+        return filter_var($value, FILTER_VALIDATE_EMAIL);
     }
 
 
